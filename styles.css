@@ -1,1 +1,29 @@
 /*  your css code here. If applicable */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #111;
+}
+
+.container {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+    gap: 4px;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: #1d1d1d;
+    transition: background-color 1s ease;
+    border-radius: 3px;
+}
